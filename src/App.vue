@@ -33,7 +33,7 @@ import GameScreen from './components/GameScreen.vue'
 }
 
 .app-title {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin: 0 0 0.5rem 0;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);

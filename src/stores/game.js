@@ -345,7 +345,7 @@ export const useGameStore = defineStore('game', () => {
       name: 'Stropharia Aeruginosa',
       englishName: 'Stropharia Aeruginosa',
       latinName: 'Stropharia Aeruginosa',
-      image: '/src/assets/images/stropharia_aeruginosa.png',
+      image: '/src/assets/images/stropharia_aeruginosа.png',
       description:
         'A bolete mushroom with a cracked cap surface. Edible but not considered choice, often used in mixed mushroom dishes.',
     },

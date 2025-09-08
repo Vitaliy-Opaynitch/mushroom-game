@@ -155,9 +155,9 @@ onUnmounted(() => {
 }
 
 .game-content {
-  background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 50%, #a5d6a7 100%);
+  background: url('@/assets/background.png') center/cover no-repeat;
   border-radius: 15px;
-  padding: 1rem;
+  padding: 0.7rem;
   max-width: 90vw;
   max-height: 85vh;
   width: 100%;
@@ -173,9 +173,6 @@ onUnmounted(() => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.25rem;
-  border-bottom: 1px solid #e0e0e0;
   flex-shrink: 0;
 }
 
@@ -193,14 +190,14 @@ onUnmounted(() => {
 
 .label {
   font-size: 0.8rem;
-  color: #666;
+  color: #aeaeae;
   font-weight: 500;
 }
 
 .value {
   font-size: 1rem;
   font-weight: bold;
-  color: #333;
+  color: #aeaeae;
 }
 
 .value.lives {
@@ -235,7 +232,7 @@ onUnmounted(() => {
 
 .timer-label {
   font-size: 0.6rem;
-  color: #666;
+  color: #aeaeae;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -262,7 +259,12 @@ onUnmounted(() => {
 .question-title {
   font-size: 1rem;
   color: #2e7d32;
+  background-color: #ffffffd3;
   font-weight: 600;
+  width: fit-content;
+  border-radius: 0.5rem;
+  padding: 0 0.4rem;
+  margin: 0 auto;
 }
 
 .question-image {
@@ -284,11 +286,11 @@ onUnmounted(() => {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 1.2rem;
-  max-width: 800px;
+  gap: 1rem;
+  max-width: 850px;
   margin: 0 auto;
   flex: 1;
-  min-height: 500px;
+  min-height: 450px;
 }
 
 /* Start Screen */
@@ -445,7 +447,7 @@ onUnmounted(() => {
   }
 
   .game-content {
-    padding: 0.75rem;
+    padding: 0.65rem;
     border-radius: 10px;
   }
 

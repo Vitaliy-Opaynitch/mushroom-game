@@ -22,18 +22,18 @@
         <p class="description">{{ mushroom.description }}</p>
 
         <div class="game-stats">
-                  <div class="stat">
-          <span class="stat-label">Score:</span>
-          <span class="stat-value">{{ score }}</span>
-        </div>
-        <div class="stat">
-          <span class="stat-label">Lives:</span>
-          <span class="stat-value">{{ playerLives }}</span>
-        </div>
-        <div class="stat">
-          <span class="stat-label">Level:</span>
-          <span class="stat-value">{{ currentLevel }}</span>
-        </div>
+          <div class="stat">
+            <span class="stat-label">Score:</span>
+            <span class="stat-value">{{ score }}</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Lives:</span>
+            <span class="stat-value">{{ playerLives }}</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Level:</span>
+            <span class="stat-value">{{ currentLevel }}</span>
+          </div>
         </div>
       </div>
 
@@ -65,16 +65,16 @@ const {
 } = storeToRefs(gameStore)
 
 // Destructure functions directly (they don't need storeToRefs)
-const {
-  nextQuestion: nextQuestionFn,
-  restartCurrentGame,
-  goToStartScreen,
-} = gameStore
+const { nextQuestion: nextQuestionFn, restartCurrentGame, goToStartScreen } = gameStore
 
 // Watch for changes in showResult
-watch(showResult, (newValue) => {
-  console.log('showResult changed to:', newValue)
-}, { immediate: true })
+watch(
+  showResult,
+  (newValue) => {
+    console.log('showResult changed to:', newValue)
+  },
+  { immediate: true },
+)
 
 const nextQuestion = () => {
   console.log('Next Question button clicked')
@@ -201,7 +201,7 @@ const handleOverlayClick = () => {
 .game-stats {
   display: flex;
   justify-content: space-around;
-  background: #f8f9fa;
+  background: #d8d8d8;
   padding: 1rem;
   border-radius: 8px;
   margin: 0;
