@@ -305,15 +305,6 @@ export const useGameStore = defineStore('game', () => {
         'A small bolete mushroom with a peppery taste. Used as a spice rather than a main ingredient due to its strong flavor.',
     },
     {
-      id: 33,
-      name: 'Cortinariaceae',
-      englishName: 'Cortinariaceae',
-      latinName: 'Cortinariaceae',
-      image: '/src/assets/images/cortinariaceae.png',
-      description:
-        'A family of mushrooms that includes many species. Some are edible, but many are toxic, so expert identification is crucial.',
-    },
-    {
       id: 34,
       name: 'Entoloma Clypeatum',
       englishName: 'Entoloma Clypeatum',
@@ -441,6 +432,12 @@ export const useGameStore = defineStore('game', () => {
     lastAnswer.value = null
     isCorrect.value = false
 
+    // Reset game state completely
+    currentLevel.value = 1
+    playerLives.value = 3
+    score.value = 0
+    timeLeft.value = 60
+
     // Clear timer
     if (timer.value) {
       clearInterval(timer.value)
@@ -474,11 +471,6 @@ export const useGameStore = defineStore('game', () => {
 
     // Combine correct answer with wrong options and shuffle
     currentOptions.value = [correctAnswer.value, ...wrongOptions].sort(() => Math.random() - 0.5)
-
-    console.log('Question generated:')
-    console.log('Current question:', currentQuestion.value)
-    console.log('Current options:', currentOptions.value)
-    console.log('Correct answer:', correctAnswer.value)
   }
 
   function selectAnswer(selectedMushroom) {

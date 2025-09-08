@@ -51,7 +51,7 @@
 
       <!-- Question -->
       <div class="question-section">
-        <h2 class="question-title">Which mushroom is "{{ currentQuestion?.name }}"?</h2>
+        <h2 class="question-title">Which mushroom is {{ currentQuestion?.name }}?</h2>
       </div>
 
       <!-- Answer Options - 2x2 Grid -->
@@ -315,14 +315,14 @@ onUnmounted(() => {
 .start-description {
   font-size: 1.2rem;
   color: #666;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
   line-height: 1.6;
 }
 
 .game-rules {
   text-align: left;
-  margin: 0 0 2rem 0;
-  background: #f8f9fa;
+  margin: 0 0 1rem 0;
+  background: #d8d8d8;
   padding: 1.5rem;
   border-radius: 12px;
 }
@@ -336,8 +336,8 @@ onUnmounted(() => {
 .game-rules ul {
   margin: 0;
   padding-left: 1.5rem;
-  color: #666;
-  line-height: 1.6;
+  color: #4c4c4c;
+  line-height: 1.5;
 }
 
 .game-rules li {
