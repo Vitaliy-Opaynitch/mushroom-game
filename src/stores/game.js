@@ -309,7 +309,61 @@ export const useGameStore = defineStore('game', () => {
       name: 'Cortinariaceae',
       englishName: 'Cortinariaceae',
       latinName: 'Cortinariaceae',
-      image: '/src/assets/images/сortinariaceae.png',
+      image: '/src/assets/images/cortinariaceae.png',
+      description:
+        'A family of mushrooms that includes many species. Some are edible, but many are toxic, so expert identification is crucial.',
+    },
+    {
+      id: 34,
+      name: 'Entoloma Clypeatum',
+      englishName: 'Entoloma Clypeatum',
+      latinName: 'Entoloma Clypeatum',
+      image: '/src/assets/images/entoloma_clypeatum.png',
+      description:
+        'A bolete mushroom with a cracked cap surface. Edible but not considered choice, often used in mixed mushroom dishes.',
+    },
+    {
+      id: 35,
+      name: 'Galerina Marginata',
+      englishName: 'Galerina Marginata',
+      latinName: 'Galerina Marginata',
+      image: '/src/assets/images/galerina_marginata.png',
+      description:
+        'A small bolete mushroom with a peppery taste. Used as a spice rather than a main ingredient due to its strong flavor.',
+    },
+    {
+      id: 36,
+      name: 'Morchella Conica',
+      englishName: 'Morchella Conica',
+      latinName: 'Morchella Conica',
+      image: '/src/assets/images/morchella_conica.png',
+      description:
+        'A family of mushrooms that includes many species. Some are edible, but many are toxic, so expert identification is crucial.',
+    },
+    {
+      id: 37,
+      name: 'Stropharia Aeruginosa',
+      englishName: 'Stropharia Aeruginosa',
+      latinName: 'Stropharia Aeruginosa',
+      image: '/src/assets/images/stropharia_aeruginosa.png',
+      description:
+        'A bolete mushroom with a cracked cap surface. Edible but not considered choice, often used in mixed mushroom dishes.',
+    },
+    {
+      id: 38,
+      name: 'Tricholoma Equestre',
+      englishName: 'Tricholoma Equestre',
+      latinName: 'Tricholoma Equestre',
+      image: '/src/assets/images/tricholoma_equestre.png',
+      description:
+        'A small bolete mushroom with a peppery taste. Used as a spice rather than a main ingredient due to its strong flavor.',
+    },
+    {
+      id: 39,
+      name: 'Tricholoma portentosum',
+      englishName: 'Tricholoma portentosum',
+      latinName: 'Tricholoma portentosum',
+      image: '/src/assets/images/tricholoma_portentosum.png',
       description:
         'A family of mushrooms that includes many species. Some are edible, but many are toxic, so expert identification is crucial.',
     },
